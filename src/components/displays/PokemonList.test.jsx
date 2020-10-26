@@ -6,7 +6,7 @@ import PokemonList from './PokemonList'
 
 const pokemonData = [{
   "_id": "5cef3501ef6005a77cd4fd16",
-  "name": "venusaur",
+  "pokemon": "venusaur",
   "id": 3,
   "species_id": 3,
   "height": 20,
@@ -28,7 +28,7 @@ const pokemonData = [{
   "color_f": "#81A763",
   "egg_group_1": "monster",
   "egg_group_2": "plant",
-  "image": "http://assets.pokemon.com/assets/cms2/img/pokedex/full/003.png",
+  "url_image": "http://assets.pokemon.com/assets/cms2/img/pokedex/full/003.png",
   "generation_id": 1,
   "evolves_from_species_id": "2",
   "evolution_chain_id": 1,
@@ -39,7 +39,7 @@ const pokemonData = [{
 },
 {
   "_id": "5cef3501ef6005a77cd4fd17",
-  "name": "bulbasaur",
+  "pokemon": "bulbasaur",
   "id": 1,
   "species_id": 1,
   "height": 7,
@@ -61,7 +61,7 @@ const pokemonData = [{
   "color_f": "#81A763",
   "egg_group_1": "monster",
   "egg_group_2": "plant",
-  "image": "http://assets.pokemon.com/assets/cms2/img/pokedex/full/001.png",
+  "url_image": "http://assets.pokemon.com/assets/cms2/img/pokedex/full/001.png",
   "generation_id": 1,
   "evolves_from_species_id": "NA",
   "evolution_chain_id": 1,
@@ -74,7 +74,7 @@ const pokemonData = [{
 describe('Tests PokemonList component', () => {
   it('should render a list of pokemon to the page', () => {
     const { asFragment } = render(<PokemonList
-      pokemonData={pokemonData} key={pokemonData.name}
+      pokemonData={pokemonData} key={pokemonData.pokemon}
     />)
 
     expect(asFragment()).toMatchSnapshot();

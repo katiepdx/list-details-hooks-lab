@@ -14,7 +14,7 @@ export default function PokemonList({ pokemonData }) {
 
 PokemonItem.propTypes = {
   pokemonData: propTypes.arrayOf(propTypes.shape({
-    name: propTypes.string.isRequired,
-    image: propTypes.string.isRequired
+    pokemon: propTypes.string.isRequired,
+    url_image: propTypes.string.isRequired
   }))
 }

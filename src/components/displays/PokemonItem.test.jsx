@@ -7,8 +7,8 @@ import PokemonItem from './PokemonItem'
 describe('Tests PokemonItem component', () => {
   it('should render a list item to the page', () => {
     const { asFragment } = render(<PokemonItem
-      name="venusaur"
-      image="http://assets.pokemon.com/assets/cms2/img/pokedex/full/003.png"
+      pokemon="venusaur"
+      url_image="http://assets.pokemon.com/assets/cms2/img/pokedex/full/003.png"
     />)
 
     expect(asFragment()).toMatchSnapshot();

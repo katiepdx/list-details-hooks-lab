@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Tests PokemonDetails component should render the details for one pokemon to the page 1`] = `
+<DocumentFragment>
+  <div>
+    PokemonDetails page
+    <p>
+      Pokemon: Pokemon Name
+    </p>
+    <p>
+      HP: 5
+    </p>
+    <p>
+      Attack: 200
+    </p>
+    <p>
+      Defense: 100
+    </p>
+    <p>
+      Ability: 
+    </p>
+    <p>
+      Image: http://assets.pokemon.com/assets/cms2/img/pokedex/full/003.png
+    </p>
+  </div>
+</DocumentFragment>
+`;

@@ -1,16 +1,17 @@
 import React from 'react'
 import propTypes from 'prop-types'
 
-export default function PokemonItem({ name, image }) {
+export default function PokemonItem({ pokemon, url_image }) {
   return (
-    <div key={name}>
-      <p>{name}</p>
-      <p>{image}</p>
+    <div key={pokemon}>
+      PokemonItem Page
+      <p>Pokemon: {pokemon}</p>
+      <p>{url_image}</p>
     </div>
   )
 }
 
 PokemonItem.propTypes = {
-  name: propTypes.string.isRequired,
-  image: propTypes.string.isRequired
+  pokemon: propTypes.string.isRequired,
+  url_image: propTypes.string.isRequired
 }
