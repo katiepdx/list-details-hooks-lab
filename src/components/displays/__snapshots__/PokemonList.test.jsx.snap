@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Tests PokemonList component should render a list of pokemon to the page 1`] = `
+<DocumentFragment>
+  <div>
+    <p>
+      venusaur
+    </p>
+    <p>
+      http://assets.pokemon.com/assets/cms2/img/pokedex/full/003.png
+    </p>
+  </div>
+  <div>
+    <p>
+      bulbasaur
+    </p>
+    <p>
+      http://assets.pokemon.com/assets/cms2/img/pokedex/full/001.png
+    </p>
+  </div>
+</DocumentFragment>
+`;
