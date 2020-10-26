@@ -1,6 +1,5 @@
-// individual pokemon - list a Pokemon name and image
-
 import React from 'react'
+import propTypes from 'prop-types'
 
 export default function PokemonItem({ name, image }) {
   return (
@@ -9,4 +8,9 @@ export default function PokemonItem({ name, image }) {
       <p>{image}</p>
     </div>
   )
+}
+
+PokemonItem.propTypes = {
+  name: propTypes.string.isRequired,
+  image: propTypes.string.isRequired
 }
