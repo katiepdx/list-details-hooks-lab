@@ -1,11 +1,12 @@
-// individual pokemon - list Pokemon name and image
+// individual pokemon - list a Pokemon name and image
 
 import React from 'react'
 
-export default function PokemonItem() {
+export default function PokemonItem({ name, image }) {
   return (
     <div>
-      PokemonItem Page
+      <p>{name}</p>
+      <p>{image}</p>
     </div>
   )
 }
