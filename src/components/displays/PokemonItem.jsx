@@ -1,12 +1,11 @@
 import React from 'react'
 import propTypes from 'prop-types'
-
+import './PokemonItem.css'
 export default function PokemonItem({ pokemon, url_image }) {
   return (
     <div key={pokemon}>
-      PokemonItem Page
       <p>Pokemon: {pokemon}</p>
-      <p>{url_image}</p>
+      <img src={url_image} />
     </div>
   )
 }

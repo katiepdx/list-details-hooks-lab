@@ -3,22 +3,24 @@
 exports[`Tests PokemonList component should render a list of pokemon to the page 1`] = `
 <DocumentFragment>
   <div>
-    PokemonItem Page
-    <p>
-      Pokemon: venusaur
-    </p>
-    <p>
-      http://assets.pokemon.com/assets/cms2/img/pokedex/full/003.png
-    </p>
+    <div>
+      <p>
+        Pokemon: venusaur
+      </p>
+      <img
+        src="http://assets.pokemon.com/assets/cms2/img/pokedex/full/003.png"
+      />
+    </div>
   </div>
   <div>
-    PokemonItem Page
-    <p>
-      Pokemon: bulbasaur
-    </p>
-    <p>
-      http://assets.pokemon.com/assets/cms2/img/pokedex/full/001.png
-    </p>
+    <div>
+      <p>
+        Pokemon: bulbasaur
+      </p>
+      <img
+        src="http://assets.pokemon.com/assets/cms2/img/pokedex/full/001.png"
+      />
+    </div>
   </div>
 </DocumentFragment>
 `;

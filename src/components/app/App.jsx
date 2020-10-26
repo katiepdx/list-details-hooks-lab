@@ -7,6 +7,7 @@ import {
 } from 'react-router-dom'
 import PokemonList from '../displays/PokemonList'
 import PokemonDetails from '../displays/PokemonDetails';
+import PokemonContainer from '../../container/PokemonContainer';
 
 // set up router here
 export default function App() {
@@ -19,7 +20,7 @@ export default function App() {
       <Switch>
         <Route
           exact path="/home"
-          render={(routerProps) => <PokemonList {...routerProps} />}
+          render={(routerProps) => <PokemonContainer {...routerProps} />}
         />
         <Route
           exact path="/details/"

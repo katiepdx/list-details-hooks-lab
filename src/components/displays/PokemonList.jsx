@@ -2,13 +2,14 @@
 import React from 'react'
 import propTypes from 'prop-types'
 import PokemonItem from './PokemonItem'
+import styles from './PokemonList.css'
 
 export default function PokemonList({ pokemonData }) {
   return pokemonData.map(pokemon => (
-    <>
+    <div>
       {/* Spread pokemon props */}
       <PokemonItem key={pokemon._id} {...pokemon} />
-    </>
+    </div>
   ))
 }
 
