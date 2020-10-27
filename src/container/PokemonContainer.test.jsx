@@ -1,11 +1,11 @@
 import React from 'react'
 import { render, screen } from '@testing-library/react'
-import { getAllPokemon } from '../services/api-fetch.js'
+import { getAllPokemon } from '../Services/api-fetch.js'
 import PokemonContainer from './PokemonContainer'
 import { MemoryRouter } from 'react-router-dom'
 
 // jest.mock api call
-jest.mock('../services/api-fetch.js')
+jest.mock('../Services/api-fetch.js')
 const mockData = [{
   "_id": "5cef3501ef6005a77cd4fd16",
   "pokemon": "venusaur",

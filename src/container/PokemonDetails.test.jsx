@@ -6,7 +6,7 @@ import PokemonDetails from './PokemonDetails'
 import { getByPokemonId } from '../Services/api-fetch.js'
 
 // jest.mock api call
-jest.mock('../services/api-fetch.js')
+jest.mock('../Services/api-fetch.js')
 const mockSinglePokemon = [{
   "_id": "5cef3501ef6005a77cd4fd16",
   "pokemon": "venusaur",
