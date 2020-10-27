@@ -19,8 +19,6 @@ export default function PokemonDetails({ match }) {
     // make fetch to api for a specific pokemon using the id 
     const pokemonData = await getByPokemonId(pokemonId)
 
-    console.log(pokemonData, 'DETAILS PAGE')
-
     // set pokemonData to state using setPokemonData
     setPokemonData(pokemonData)
 
@@ -33,7 +31,7 @@ export default function PokemonDetails({ match }) {
 
 
   return (
-    <div>
+    <div data-testid="display">
       <h1>You chose {pokemonData.pokemon}!</h1>
       <img src={pokemonData.url_image} />
       <p>Pokemon: {pokemonData.pokemon}</p>
