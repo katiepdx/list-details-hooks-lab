@@ -6,9 +6,9 @@ import { Link } from 'react-router-dom'
 
 export default function PokemonList({ pokemonData }) {
   return pokemonData.map(pokemon => (
-    <div key={pokemon.name}>
+    <div key={pokemon.pokemon}>
       {/* Spread pokemon props */}
-      <Link key={pokemon._id} to={`/details/${pokemon._id}`}>
+      <Link key={pokemon.pokemon} to={`/details/${pokemon._id}`}>
         <PokemonItem {...pokemon} />
       </Link>
     </div>
