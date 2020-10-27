@@ -1,0 +1,8 @@
+.pokemonItemBox {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  text-align: center;
+  margin: 7%;
+  padding: 3%;
+  background-color: rgb(250, 232, 155);;
+}

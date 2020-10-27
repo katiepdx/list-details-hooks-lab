@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Tests PokemonItem component should render a list item to the page 1`] = `
+<DocumentFragment>
+  <div>
+    <p>
+      Pokemon: venusaur
+    </p>
+    <img
+      src="http://assets.pokemon.com/assets/cms2/img/pokedex/full/003.png"
+    />
+  </div>
+</DocumentFragment>
+`;
