@@ -2,13 +2,15 @@
 import React from 'react'
 import propTypes from 'prop-types'
 import PokemonItem from './PokemonItem'
-import styles from './PokemonList.css'
+import { Link } from 'react-router-dom'
 
 export default function PokemonList({ pokemonData }) {
   return pokemonData.map(pokemon => (
     <div>
       {/* Spread pokemon props */}
-      <PokemonItem key={pokemon._id} {...pokemon} />
+      <Link to={`/details/${pokemon._id}`}>
+        <PokemonItem key={pokemon._id} {...pokemon} />
+      </Link>
     </div>
   ))
 }
