@@ -51,7 +51,6 @@ describe('Tests PokemonDetails component', () => {
 
     const display = await screen.findByTestId('display')
 
-    // expect(display).not.toBeEmptyDOMElement();
-    expect(display).toMatchSnapshot();
+    expect(display).not.toBeEmptyDOMElement();
   })
 })
