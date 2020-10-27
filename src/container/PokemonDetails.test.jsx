@@ -3,7 +3,7 @@
 import React from 'react'
 import { render, screen } from '@testing-library/react'
 import PokemonDetails from './PokemonDetails'
-import { getByPokemonId } from '../services/api-fetch.js'
+import { getByPokemonId } from '../Services/api-fetch.js'
 
 // jest.mock api call
 jest.mock('../services/api-fetch.js')
