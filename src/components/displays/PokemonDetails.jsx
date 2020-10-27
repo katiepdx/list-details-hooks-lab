@@ -15,6 +15,7 @@ export default function PokemonDetails({ match }) {
   useEffect(async () => {
     // get id from params for api fetch
     const params = match.params;
+    
     // get the value from the obj (pokemonId)
     const pokemonId = Object.values(params)
 

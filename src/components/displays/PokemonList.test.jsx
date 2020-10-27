@@ -3,6 +3,7 @@ import React from 'react'
 import { render } from '@testing-library/react'
 import PokemonItem from './PokemonItem'
 import PokemonList from './PokemonList'
+import { MemoryRouter } from 'react-router-dom'
 
 const pokemonData = [{
   "_id": "5cef3501ef6005a77cd4fd16",
@@ -73,9 +74,12 @@ const pokemonData = [{
 
 describe('Tests PokemonList component', () => {
   it('should render a list of pokemon to the page', () => {
-    const { asFragment } = render(<PokemonList
-      pokemonData={pokemonData} key={pokemonData.pokemon}
-    />)
+
+    const { asFragment } = render(
+    <MemoryRouter>
+      <PokemonList pokemonData={pokemonData} key={pokemonData.pokemon}/>
+    </MemoryRouter>)
+
 
     expect(asFragment()).toMatchSnapshot();
   })

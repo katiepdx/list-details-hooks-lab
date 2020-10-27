@@ -2,6 +2,7 @@ import React from 'react'
 import { render, screen } from '@testing-library/react'
 import { getAllPokemon } from '../services/api-fetch'
 import PokemonContainer from './PokemonContainer'
+import { MemoryRouter } from 'react-router-dom'
 
 // jest.mock api call
 jest.mock('../services/api-fetch')
@@ -111,7 +112,7 @@ describe('Tests that the PokemonContainer displays a loading screen on load', ()
     getAllPokemon.mockResolvedValue(mockData)
 
     // render pokemon container
-    render(<PokemonContainer />)
+    render(<MemoryRouter><PokemonContainer /></MemoryRouter>)
 
     // get loading screen by testid
     const loading = screen.getByTestId('loading')
@@ -125,7 +126,7 @@ describe('Tests that the PokemonContainer displays a loading screen on load', ()
     getAllPokemon.mockResolvedValue(mockData)
 
     // render pokemon container
-    render(<PokemonContainer />)
+    render(<MemoryRouter><PokemonContainer /></MemoryRouter>)
 
     // get pokemonList by testid
     const pokemonList = await screen.findByTestId('pokemon-list')

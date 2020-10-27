@@ -3,7 +3,7 @@ import propTypes from 'prop-types'
 import './PokemonItem.css'
 export default function PokemonItem({ pokemon, url_image }) {
   return (
-    <div key={pokemon}>
+    <div>
       <p>Pokemon: {pokemon}</p>
       <img src={url_image} />
     </div>
