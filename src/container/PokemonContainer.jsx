@@ -1,5 +1,3 @@
-// app logic
-
 import React, { useState, useEffect } from 'react'
 import { getAllPokemon } from '../services/api-fetch'
 import PokemonList from '../components/displays/PokemonList'
@@ -28,8 +26,10 @@ export default function PokemonContainer() {
   if (loading) return (<p data-testid="loading">Your content is loading...</p>)
 
   else return (
-    <div className={styles.pokemonItemBox} data-testid="pokemon-list">
-      <PokemonList pokemonData={pokemonData} />
+    <div>
+      <div className={styles.pokemonItemBox} data-testid="pokemon-list">
+        <PokemonList pokemonData={pokemonData} />
+      </div>
     </div>
   )
 }

@@ -7,6 +7,7 @@ import {
 } from 'react-router-dom'
 import PokemonDetails from '../../container/PokemonDetails';
 import PokemonContainer from '../../container/PokemonContainer';
+import './App.css'
 
 // set up router here
 export default function App() {

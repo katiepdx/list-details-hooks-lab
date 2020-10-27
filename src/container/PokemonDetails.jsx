@@ -3,7 +3,7 @@
 import React, { useState, useEffect } from 'react'
 import propTypes from 'prop-types'
 import { getByPokemonId } from '../services/api-fetch'
-
+import './PokemonDetails.css'
 export default function PokemonDetails({ match }) {
   // loading state - default is true
   const [loading, setLoading] = useState(true)
