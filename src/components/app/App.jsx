@@ -5,7 +5,7 @@ import {
   Switch,
   Link
 } from 'react-router-dom'
-import PokemonDetails from '../displays/PokemonDetails';
+import PokemonDetails from '../../container/PokemonDetails';
 import PokemonContainer from '../../container/PokemonContainer';
 
 // set up router here

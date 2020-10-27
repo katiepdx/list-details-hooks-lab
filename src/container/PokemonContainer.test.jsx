@@ -1,5 +1,7 @@
 import React from 'react'
 import { render, screen } from '@testing-library/react'
+import { act } from 'react-dom/test-utils';
+
 import { getAllPokemon } from '../services/api-fetch.js'
 import PokemonContainer from './PokemonContainer'
 import { MemoryRouter } from 'react-router-dom'
@@ -112,7 +114,9 @@ describe('Tests that the PokemonContainer displays a loading screen on load', ()
     getAllPokemon.mockResolvedValue(mockData)
 
     // render pokemon container
-    render(<MemoryRouter><PokemonContainer /></MemoryRouter>)
+    act(() => {
+      render(<MemoryRouter><PokemonContainer /></MemoryRouter>)
+    })
 
     // get loading screen by testid
     const loading = screen.getByTestId('loading')

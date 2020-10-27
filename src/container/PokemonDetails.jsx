@@ -2,7 +2,7 @@
 
 import React, { useState, useEffect } from 'react'
 import propTypes from 'prop-types'
-import { getByPokemonId } from '../../services/api-fetch'
+import { getByPokemonId } from '../services/api-fetch'
 
 export default function PokemonDetails({ match }) {
   // loading state - default is true
