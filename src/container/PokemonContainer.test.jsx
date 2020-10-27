@@ -3,6 +3,7 @@ import { render, screen } from '@testing-library/react'
 import { getAllPokemon } from '../services/api-fetch'
 import PokemonContainer from './PokemonContainer'
 import { MemoryRouter } from 'react-router-dom'
+import { act } from 'react-dom/test-utils'
 
 // jest.mock api call
 jest.mock('../services/api-fetch')

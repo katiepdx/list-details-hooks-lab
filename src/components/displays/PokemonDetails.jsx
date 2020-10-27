@@ -14,10 +14,7 @@ export default function PokemonDetails({ match }) {
   // useEffect (like component did mount) for pokemon detail page.
   useEffect(async () => {
     // get id from params for api fetch
-    const params = match.params;
-    
-    // get the value from the obj (pokemonId)
-    const pokemonId = Object.values(params)
+    const pokemonId = match.params.pokemonId;
 
     // make fetch to api for a specific pokemon using the id 
     const pokemonData = await getByPokemonId(pokemonId)
